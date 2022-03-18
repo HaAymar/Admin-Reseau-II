@@ -5,8 +5,8 @@ Projet d'administration reseau 2
 
 * Installation Docker  
 
-  <b>[lien vers l'installation DOCKER](https://www.docker.com/get-started/)
+  <b>[lien vers l'installation DOCKER](https://www.docker.com/get-started/)</b>
  
 * Installation Putty  
  
-  <b>[Lien vers l'installation PuTTY](https://www.putty.org/)
+  <b>[Lien vers l'installation PuTTY](https://www.putty.org/)</b>
