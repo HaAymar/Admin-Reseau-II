@@ -12,5 +12,6 @@ Projet d'administration reseau 2
   <b>[Lien vers l'installation PuTTY](https://www.putty.org/)</b>
 
 * Installation du conteneur
-
+```
 docker run -d -p 53:53/tcp -p 53:53/udp --name <nom> <image>
+```
