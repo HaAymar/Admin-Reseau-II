@@ -1,0 +1,4 @@
+zone "l1-4.ephec-ti.be" {
+        type master;
+        file "/etc/bind/l1-4.ephec-ti.be";
+};
