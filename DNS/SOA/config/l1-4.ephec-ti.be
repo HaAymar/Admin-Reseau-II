@@ -17,11 +17,11 @@ ns      IN      A       176.96.231.164
 ;
 ;Web
 www     IN      A       176.98.231.164
-b2b     IN      A       179.98.231.164
+b2b     IN      A       176.98.231.164
 ;
 ;Mail
-mail    IN      A       179.98.231.164
+mail    IN      A       176.98.231.164
 ;Voip
 _sip._tcp       SRV     0       0       5060    sip
 _sip._udp       SRV     0       0       5060    sip
-sip     IN      A       179.98.231.164
+sip     IN      A       176.98.231.164
