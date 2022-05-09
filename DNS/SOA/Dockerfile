@@ -13,4 +13,4 @@ VOLUME ["/var/cache/bind", "/var/lib/bind", "/var/log"]
 
 EXPOSE 53/udp 53/tcp 953/tcp
 
-CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf", "-u", "bind"]
+CMD ["/usr/sbin/named", "-f", "-c", "/etc/bind/named.conf", "-u", "bind"]
