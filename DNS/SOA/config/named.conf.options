@@ -1,8 +1,4 @@
 options {
         directory "/var/cache/bind";
-
-
         listen-on { any; };
-        //recursion yes;
-        //allow-query { 127.0.0.1;176.98.231.164;176.98.231.163;176.98.231.162;};
 };
