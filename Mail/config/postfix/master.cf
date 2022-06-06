@@ -29,6 +29,8 @@ virtual   unix  -       n       n       -       -       virtual
 lmtp      unix  -       -       y       -       -       lmtp
 anvil     unix  -       -       y       -       1       anvil
 scache    unix  -       -       y       -       1       scache
+# Logging
+postlog   unix-dgram n  -       n       -       1       postlogd
 
 # Config de spamassassin
 spamassassin unix -     n       n       -       -       pipe

@@ -12,7 +12,7 @@ RUN apt-get install sudo -y
 RUN openssl req -new -x509 -days 365 -nodes -newkey rsa:4096 -out /etc/ssl/certs/mailserver.pem -keyout /etc/ssl/private/mailserver.pem -subj "/C=BE/ST=Braban-wallon/L=Wavre/O=Ephec/OU=IT/CN=mail.l1-4.ephec-ti.be"
 
 # Certificat SSL via cerbot(letsencypt)
-# utiliser l'email Brichant.vincent@l1-4.ephec-ti.be et redémarer les service postfix et dovecot après avoir modifier 10-ssl.conf(dovecot) et main.cf(postfix)
+# utiliser l'email brichant.vincent@l1-4.ephec-ti.be et redémarer les service postfix et dovecot après avoir modifier 10-ssl.conf(dovecot) et main.cf(postfix)
 # sudo certbot certonly --standalone -d mail.l1-4.ephec-ti.be
 # sudo certbot certonly --standalone -d smtp.l1-4.ephec-ti.be
 
