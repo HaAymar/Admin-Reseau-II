@@ -2,11 +2,11 @@
 $ORIGIN l1-4.ephec-ti.be.
 $TTL    604800
 @   IN  SOA ns.l1-4.ephec-ti.be. admin.l1-4.ephec-ti.be. (
-                 19     ; Serial
-             604800     ; Refresh
-              86400     ; Retry
+         2022060701     ; Serial
+              43200     ; Refresh
+               7200     ; Retry
             2419200     ; Expire
-             604800 )   ; Negative Cache TTL
+              86400 )   ; Negative Cache TTL
 
 
 

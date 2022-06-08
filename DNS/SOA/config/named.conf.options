@@ -1,4 +1,5 @@
 options {
         directory "/var/cache/bind";
         listen-on { any; };
+        allow-transfer { none; };
 };
