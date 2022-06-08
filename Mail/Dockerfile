@@ -75,8 +75,8 @@ COPY config/spamassassin/local.cf /etc/spamassassin/local.cf
 
 # Log
 
-#COPY /log/mail.log /var/log/mail.log
-#RUN nano /var/log/mail.log
+COPY /log/mail.log /var/log/mail.log
+
 
 # Commande à exécuter lors du lancement du container mail
 CMD ["sh", "-c", "service mysql start; mysql -u root < config/SQL/create-db.sql; mysql -u root < config/SQL/create-table.sql; service postfix start; service spamassassin start; service dovecot start; tail -F /var/log/mail.log"]

@@ -1,6 +1,6 @@
 # création de la DB
 create database mail;
-GRANT ALL PRIVILEGES ON mail.* to 'mailUser'@'localhost' identified by 'admin2.l1-4';
+GRANT ALL PRIVILEGES ON mail.* to 'mailUser'@'localhost' identified by [password];
 FLUSH PRIVILEGES;
 use mail;
 
