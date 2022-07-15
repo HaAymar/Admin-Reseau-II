@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("176.96.231.163:5000",'root','admin','woodytoys_db');
+$mysqli = new mysqli("localhost",'root','admin','woodytoys_db');
 
 // Check connection
 if ($mysqli -> connect_errno) {
