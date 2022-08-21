@@ -1,0 +1,24 @@
+zone "l1-4.ephec-ti.be" {
+        type master;
+        file "/etc/bind/l1-4.ephec-ti.be";
+};
+logging {
+        channel default_log {
+                file "/var/log/named/named.log" versions 5 size 50M;
+                print-time yes;
+                print-severity yes;
+                print-category yes;
+                severity debug; //warning;
+        };
+
+        category config  { default_log; };
+        category default { default_log; };
+        category general { default_log; };
+        category notify  { default_log; };
+        category dnssec  { default_log; };
+        category security { default_log; };
+        category xfer-out { default_log; };
+        category lame-servers { default_log; };
+        category queries { default_log; };
+        category update { default_log; };
+};

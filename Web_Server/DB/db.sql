@@ -16,4 +16,4 @@ create table woody(
 );
 
 INSERT INTO woody (name,price)
-VALUES ('jouet1' , 15), ('jouet2' , 16);
+VALUES ('toy en bois' , 15), ('Robot de lespace' , 16);

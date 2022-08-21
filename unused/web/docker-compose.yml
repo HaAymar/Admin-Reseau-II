@@ -1,0 +1,41 @@
+version : '2.2'
+services:
+  web:
+    build:
+      context: ./apache
+      dockerfile: Dockerfile
+    container_name: web_container_1
+    depends_on:
+      - db
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      local_network:
+        ipv4_address: 192.168.0.2
+  db:
+    image: mysql:8.0
+    container_name: db_container_1
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./db/db.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_woody
+      MYSQL_USER: WoodyToy
+      MYSQL_PASSWORD: HAKIZ
+    ports:
+      - 3306:3306
+    networks:
+      local_network:
+       ipv4_address: 192.168.0.3
+
+networks:
+  local_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.0.0/24
+          gateway: 192.168.0.1

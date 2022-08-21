@@ -3,6 +3,7 @@ FROM ubuntu:bionic
 RUN apt-get update -y \
  && apt-get install -y nano
 RUN apt-get install apache2 -y
+RUN apt-get install php-mysql -y
 RUN apt-get update -y
 
 COPY /WEB/B2B/index.php /var/www/B2B/index.php

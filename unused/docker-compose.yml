@@ -1,0 +1,23 @@
+version : '3.3'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: web_container_2
+    depends_on:
+      - db
+  db:
+    container_name: db_container_2
+    image: mysql:8.0
+    command: --default-authentification-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./db.sql :/docker-entrypoint-initdb.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_woody
+      MYSQL_USER: WoodyToy
+      MYSQL_PASSWORD: HAKIZ
+    ports:
+      - 6033:3306
