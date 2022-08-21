@@ -1,0 +1,15 @@
+$ORIGIN 0.168.192.in-addr.arpa.
+$TTL 86400
+@               IN     SOA      ns.intranet.l1-4.ephec-ti.be.     aymar.l1-4.ephec-ti.be. (
+                                2001062501
+                                21600
+                                3600
+                                604800
+                                86400 
+)
+
+@       IN     NS       ns.intranet.l1-4.ephec-ti.be. ;
+
+2               PTR             resolv.intranet.ephec-ti.be.
+3               PTR             ns.intranet.l1-4.ephec-ti.be.
+4		PTR		samba.intranet.l1-4.ephec-ti.be.
